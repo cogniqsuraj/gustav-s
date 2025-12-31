@@ -2166,19 +2166,33 @@ section {
 
 @media (max-width: 576px) {
     .chatbot {
-        bottom: 1.5rem;
-        right: 1.5rem;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        left: auto;
         z-index: 2000;
+        max-width: calc(100vw - 2rem);
+    }
+
+    .chatbot-toggle {
+        width: 54px;
+        height: 54px;
+    }
+
+    .chatbot-toggle-logo {
+        width: 36px;
+        height: 36px;
     }
 
     .chatbot-window {
         position: fixed;
         bottom: 70px;
-        right: 0;
-        left: 0;
-        width: calc(100% - 2rem);
+        right: 1rem;
+        left: 1rem;
+        width: auto;
+        max-width: calc(100vw - 2rem);
         max-height: 70vh;
-        margin: 0 1rem;
+        margin: 0;
         border-radius: 12px;
     }
 
