@@ -440,21 +440,21 @@ h4 {
 
 
 #header.scrolled .header-top {
-    padding: 0.5rem 0 0.25rem;
+    padding: 0.25rem 0;
 }
 
 #header.scrolled .logo-img {
-    height: 40px;
+    height: 35px;
 }
 
 #header.scrolled .navbar {
-    padding: 0.5rem 0 0.75rem;
+    padding: 0.25rem 0 0.5rem;
 }
 
 .header-top {
     display: flex;
     justify-content: center;
-    padding: 1rem 0 0.5rem;
+    padding: 0.25rem 0;
     transition: var(--transition-base);
 }
 
@@ -465,7 +465,8 @@ h4 {
 }
 
 .logo-img {
-    height: 60px;
+    height: 55px;
+    /* Slightly smaller than original 60px */
     width: auto;
     transition: var(--transition-base);
 }
@@ -473,9 +474,9 @@ h4 {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Changed from center */
-    padding: 0.75rem 0 1rem;
+    justify-content: center;
+    /* Back to original centered layout */
+    padding: 0 0 0.5rem;
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -495,7 +496,7 @@ h4 {
     letter-spacing: 1px;
     color: #333;
     position: relative;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
 }
 
 .nav-link::after {
@@ -600,11 +601,17 @@ h4 {
 }
 
 @media (max-width: 992px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0.25rem 0;
+    }
+
     .mobile-menu-toggle {
         display: flex;
-        position: relative;
-        /* Changed from absolute */
-        z-index: 1001;
+        position: absolute;
+        right: 1.5rem;
+        top: 20px;
+        z-index: 1100;
     }
 
     /* Scrolled state for toggle on mobile */
@@ -627,7 +634,7 @@ h4 {
 
     .nav-menu {
         position: fixed;
-        top: 100px;
+        top: 80px;
         left: 0;
         right: 0;
         background: #f5f0e1;
@@ -639,6 +646,7 @@ h4 {
         visibility: hidden;
         transition: var(--transition-base);
         box-shadow: var(--shadow-md);
+        z-index: 1050;
     }
 
     .nav-menu.active {
@@ -652,11 +660,9 @@ h4 {
     }
 
     .navbar {
-        display: none;
-    }
-
-    .navbar.active {
-        display: flex;
+        display: block;
+        /* Ensure container is visible */
+        width: 100%;
     }
 }
 
