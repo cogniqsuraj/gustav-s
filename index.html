@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustav's | Authentic Bavarian Tavern & Beer Garden | Leavenworth, WA</title>
+    <meta name="description"
+        content="Experience authentic Bavarian hospitality at Gustav's in Leavenworth. Enjoy traditional pub grub, craft beers, majestic mountain views, and a cozy fireplace in our historic beer garden.">
+    <meta name="keywords"
+        content="Gustav's, Leavenworth, Bavarian restaurant, beer garden, German food, pub grub, mountain views, fireplace dining">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body class="home-page">
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html" class="logo">
+                    <img src="assets/gustavs-logo.png" alt="Gustav's Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="navbar">
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="menu.html" class="nav-link">MENU</a></li>
+                    <li><a href="drinks.html" class="nav-link">DRINKS</a></li>
+                    <li><a href="#experience" class="nav-link">GROUPS & PARTIES</a></li>
+                    <li><a href="jobs.html" class="nav-link">JOBS</a></li>
+                    <li><a href="giftcards.html" class="nav-link">GIFT
+                            CARDS</a></li>
+                </ul>
+
+                <div class="nav-social">
+                    <a href="https://www.facebook.com/gustavsleavenworthwa" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/leavenworthgustavs" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://g.page/gustavsleavenworth" target="_blank" aria-label="Google">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+
+                <!-- Site Controls: Theme Only -->
+                <div class="site-controls">
+                    <button class="volume-toggle" id="volume-toggle" title="Toggle audio" aria-label="Toggle audio">
+                        <i class="fas fa-volume-mute" id="volume-icon"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun" id="theme-toggle-icon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-video">
+            <video autoplay muted loop playsinline id="hero-video">
+                <source src="assets/Gustavs_Vimeo720p30.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-wrapper">
+            <div class="about-image" style="background-image: url('assets/about.jpg');">
+            </div>
+            <div class="about-content">
+                <div class="about-text-wrapper">
+                    <h1 class="about-title">WELCOME TO GUSTAV'S</h1>
+                    <h2 class="about-subtitle">Grill & Beer Garden in Leavenworth, WA.</h2>
+                    <p>
+                        Savor casual excellence at Gustav's Grill & Beer Garden in Leavenworth, Washington.
+                        Our outstanding menu and beverages, including Gustav's own Icicle Ales, offer the
+                        perfect compliment to your day in the Cascades. In summer gather out on the deck
+                        to enjoy the majestic views. In winter bask in the warm glow of pine beside our
+                        stone fireplace.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Groups and Parties Section -->
+    <section class="about about-reverse" id="groups">
+        <div class="about-wrapper">
+            <div class="about-image" style="background-image: url('assets/parties.jpg');">
+            </div>
+            <div class="about-content">
+                <div class="about-text-wrapper">
+                    <h1 class="about-title">GROUPS AND PARTIES</h1>
+                    <h2 class="about-subtitle">Gustav's Grill & Beer Garden, A Leavenworth
+                        Tradition Since 1981</h2>
+                    <p>
+                        We Readily Accommodate Large Groups, Families And Intimate Parties. Gustav's is
+                        one of Leavenworth's only restaurants that can accommodate large walk-in groups,
+                        typically seating your party as you arrive.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-light">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Menu Section -->
+    <!-- Menu Highlights -->
+    <section class="menu-highlights" id="highlights">
+        <div class="section-bg"></div>
+        <div class="container">
+            <div class="section-header light" data-aos="fade-up">
+                <span class="section-badge">Our Menu</span>
+                <h2 class="section-title">Diverse Menu, Something For Everyone</h2>
+                <p class="section-subtitle">From German classics to American favorites</p>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="menu-card-image">
+                        <img src="assets/pretzel-sticks.jpg" alt="Giant Bavarian Pretzels">
+                        <div class="menu-card-badge">Fan Favorite</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Giant Bavarian Pretzels</h3>
+                        <p>Our famous hand-rolled soft pretzels served warm. Choice of sauces: Ranch, Tartar, Buffalo,
+                            Chipotle BBQ,
+                            Mango Habanero, Honey Mustard, or Blue Cheese.</p>
+                        <div class="menu-card-tags">
+                            <span><i class="fas fa-fire"></i> Most Popular</span>
+                            <span><i class="fas fa-leaf"></i> Authentic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-card-image">
+                        <img src="assets/sausage-platter.jpg" alt="German Sausage Platter">
+                        <div class="menu-card-badge">Traditional</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>German Sausages</h3>
+                        <p>Grilled sausage served with hot sauerkraut on a hoagie roll & fries. A classic Leavenworth
+                            favorite.</p>
+                        <div class="menu-card-tags">
+                            <span><i class="fas fa-drumstick-bite"></i> Hearty</span>
+                            <span><i class="fas fa-star"></i> Authentic German</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-card-image">
+                        <img src="assets/gustavs-burger.jpg" alt="Gustav's Gourmet Burgers">
+                        <div class="menu-card-badge">Grill Favorites</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Burgers & Hot Sandwiches</h3>
+                        <p>Served with a side of our house-cut fries. Substitutions available for Onion Rings, Coleslaw,
+                            or Warm German Potato Salad.</p>
+                        <div class="menu-card-tags">
+                            <span><i class="fas fa-hamburger"></i> American Classics</span>
+                            <span><i class="fas fa-fire"></i> Grilled Fresh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cta" data-aos="fade-up">
+                <p>Craving more? Browse our complete menu online</p>
+                <a href="menu.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-book-open"></i> View Full Menu
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Groups & Parties</span>
+                <h2 class="section-title">We Accommodate Everyone</h2>
+                <p class="section-subtitle">Gustav's is one of Leavenworth's only restaurants that can accommodate large
+                    walk-in groups</p>
+            </div>
+
+            <div class="experience-grid">
+                <div class="experience-card card-large" data-aos="fade-up">
+                    <div class="experience-image">
+                        <img src="assets/exterior.jpg" alt="Gustav's Exterior">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Large Groups Welcome</h3>
+                        <p>
+                            We readily accommodate large groups, families and intimate parties.
+                            Gustav's is one of Leavenworth's only restaurants that can accommodate
+                            large walk-in groups, typically seating your party as you arrive.
+                        </p>
+                        <ul class="experience-features">
+                            <li><i class="fas fa-check"></i> Walk-ins welcome</li>
+                            <li><i class="fas fa-check"></i> Party reservations available</li>
+                            <li><i class="fas fa-check"></i> Flexible seating</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-phone"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="experience-image">
+                        <img src="assets/tavern-night.jpg" alt="Gustav's at Night">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Stone Fireplace</h3>
+                        <p>
+                            In winter bask in the warm glow of pine beside our iconic stone fireplace.
+                            The perfect cozy atmosphere for a memorable dining experience.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="experience-image">
+                        <img src="assets/food-dishes.jpg" alt="Gustav's Food">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-icon">
+                            <i class="fas fa-beer"></i>
+                        </div>
+                        <h3>Icicle Ales</h3>
+                        <p>
+                            Enjoy Gustav's own Icicle Ales and a wide selection of craft beers.
+                            The perfect pairing for our outstanding menu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Guest Reviews</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The views from the beer garden are absolutely stunning! Combined with authentic German food
+                        and great beer, this is a must-visit in Leavenworth."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Sarah M.</strong>
+                        <span>Seattle, WA</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Cozy fireplace, amazing pretzels, and the bratwurst was perfection. We come here every time
+                        we visit Leavenworth. It's our tradition!"
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Mike & Lisa D.</strong>
+                        <span>Portland, OR</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Fantastic atmosphere and the staff went above and beyond for our large group. The schnitzel
+                        rivals anything I've had in Germany!"
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>James T.</strong>
+                        <span>Spokane, WA</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-badge" data-aos="zoom-in">
+                <div class="badge-content">
+                    <i class="fas fa-trophy"></i>
+                    <strong>1,974+</strong>
+                    <span>5-Star Reviews</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="section-header">
+                        <span class="section-badge">Visit Us</span>
+                        <h2 class="section-title">Find Us in the Village</h2>
+                        <p class="section-subtitle">We're in the heart of Leavenworth, easy to find and worth the trip
+                        </p>
+                    </div>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>617 US-2<br>Leavenworth, WA 98826</p>
+                                <a href="https://maps.google.com/?q=617+US-2+Leavenworth+WA+98826" target="_blank"
+                                    class="contact-link">
+                                    Get Directions <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Hours</h4>
+                                <p><strong>Fri, Sat:</strong> 11:00 AM - 9:00 PM<br>
+                                    <strong>Sun-Thu:</strong> 11:00 AM - 8:00 PM
+                                </p>
+                                <a href="tel:+15095484509" class="contact-link">
+                                    Call for Today's Hours <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+1 (509) 548-4509</p>
+                                <a href="tel:+15095484509" class="contact-link">
+                                    Call Us Now <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>office@gustavsleavenworth.com</p>
+                                <a href="mailto:office@gustavsleavenworth.com" class="contact-link">
+                                    Send Email <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/gustavsleavenworthwa" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/leavenworthgustavs" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-map" data-aos="fade-left">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.8!2d-120.6614!3d47.5955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549a51be77bbbbbb%3A0x1234567890abcdef!2sGustav&#39;s%20Leavenworth!5e0!3m2!1sen!2sus!4v1703721600000!5m2!1sen!2sus"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <div class="newsletter-text">
+                    <h2>Newsletter</h2>
+                    <p>Sign up for our newsletter & get exclusive offers and invites!</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Subscribe
+                    </button>
+                </form>
+                <p class="newsletter-privacy">We respect your privacy. Unsubscribe anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="location">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/gustavs-logo.png" alt="Gustav's Logo">
+                        <span>GUSTAV'S</span>
+                    </a>
+                    <p>A Leavenworth tradition since 1981. Grill & Beer Garden serving outstanding food with Pacific
+                        Northwest hospitality.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/gustavsleavenworthwa" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/leavenworthgustavs" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="drinks.html">Drinks Menu</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#groups">Groups & Parties</a></li>
+                        <li><a href="giftcards.html">Gift Cards</a></li>
+                        <li><a href="#contact">Directions</a></li>
+                        <li><a href="jobs.html">We're
+                                Hiring!</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Visit Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 617 US-2, Leavenworth, WA</li>
+                        <li><i class="fas fa-phone"></i> +1 (509) 548-4509</li>
+                        <li><i class="fas fa-clock"></i> Fri-Sat: 11AM-9PM</li>
+                        <li><i class="fas fa-clock"></i> Sun-Thu: 11AM-8PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gustav's Grill & Beer Garden. All rights reserved. | Leavenworth, WA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot" id="chatbot">
+        <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Toggle chat">
+            <img src="assets/gustavs-logo.png" alt="Chat with us" class="chatbot-toggle-logo">
+            <span class="chatbot-notification">1</span>
+        </button>
+
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-avatar">
+                    <img src="assets/gustavs-logo.png" alt="Gustav's Assistant">
+                </div>
+                <div class="chatbot-info">
+                    <h4>Gustav's Assistant</h4>
+                    <p><span class="status-dot"></span> Online</p>
+                </div>
+                <button class="chatbot-clear" id="chatbot-clear" title="Clear chat" aria-label="Clear chat">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+                <button class="chatbot-close" id="chatbot-close" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <img src="assets/gustavs-logo.png" alt="Bot">
+                    </div>
+                    <div class="message-content">
+                        <p>Willkommen! 🍺 Welcome to Gustav's! I'm here to help answer questions about our views,
+                            fireplace seating, menu, hours, and more.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chatbot-quick-replies" id="quick-replies">
+                <button class="quick-reply" data-message="What's on the menu?">🍴 Menu</button>
+                <button class="quick-reply" data-message="What are your hours?">🕐 Hours</button>
+                <button class="quick-reply" data-message="Where are you located?">📍 Location</button>
+                <button class="quick-reply" data-message="Do you take reservations?">📅 Reservations</button>
+            </div>
+
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input" placeholder="Ask about views, menu, hours..." autocomplete="off">
+                <button id="chatbot-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="chatbot-fab" id="chatbot-fab" style="display: none;">
+            <div class="chatbot-fab-inner">
+                <img src="assets/gustavs-logo.png" alt="Gustav's Assistant" style="width:32px;height:32px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/chatbot-data.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

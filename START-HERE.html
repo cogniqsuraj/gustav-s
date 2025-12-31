@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustav's - Quick Launch</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .launcher {
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #D4AF37;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        a {
+            display: block;
+            padding: 20px 40px;
+            background: linear-gradient(135deg, #D4AF37, #B87333);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+        a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+        }
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        .status {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            font-size: 0.9rem;
+            color: #4ade80;
+        }
+    </style>
+</head>
+<body>
+    <div class="launcher">
+        <h1>🍺 Gustav's</h1>
+        <p>Bavarian Tavern & Beer Garden</p>
+        
+        <div class="buttons">
+            <a href="index.html">
+                <span class="icon">🌐</span>
+                Launch Website
+            </a>
+            <a href="SETUP.html">
+                <span class="icon">📋</span>
+                Setup Guide
+            </a>
+            <a href="README.md">
+                <span class="icon">📚</span>
+                Documentation
+            </a>
+        </div>
+        
+        <div class="status">
+            ✅ Website ready to view<br>
+            ✅ All features functional<br>
+            ✅ Chatbot AI active
+        </div>
+    </div>
+
+    <script>
+        // Auto-redirect to website after 3 seconds
+        setTimeout(() => {
+            window.location.href = 'index.html';
+        }, 3000);
+    </script>
+</body>
+</html>

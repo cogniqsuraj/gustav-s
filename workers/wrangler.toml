@@ -1,0 +1,10 @@
+name = "gustavs-chatbot"
+main = "chatbot-worker.js"
+compatibility_date = "2024-01-01"
+
+# Optional: Add your Cloudflare account ID
+# account_id = "your-account-id"
+
+[vars]
+# You can move the API key to environment variables for better security
+# GEMINI_API_KEY = "your-api-key"

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustav's | Careers | Leavenworth, WA</title>
+    <meta name="description"
+        content="Join the Gustav's team in Leavenworth! We're hiring. Apply now to become part of our awesome team.">
+    <meta name="keywords" content="Gustav's, Leavenworth, jobs, careers, hiring, restaurant jobs, apply">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .careers-page {
+            min-height: 100vh;
+            padding-top: 100px;
+        }
+
+        .careers-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .careers-logo {
+            margin-bottom: 30px;
+        }
+
+        .careers-logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        .careers-title {
+            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .careers-intro {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .careers-phone {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .careers-phone a {
+            color: #333;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .careers-phone a:hover {
+            color: #000;
+        }
+
+        .careers-form {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group input[type="email"] {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #fff;
+            color: #333;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #666;
+        }
+
+        .form-group input::placeholder {
+            color: #999;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin: 30px 0;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            min-width: 18px;
+            margin-top: 3px;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            font-size: 0.95rem;
+            color: #333;
+            line-height: 1.5;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px 30px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background: #000;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #333;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-bottom: 30px;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #000;
+        }
+
+        .privacy-links {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .privacy-links a {
+            color: #666;
+            text-decoration: underline;
+        }
+
+        .privacy-links a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body class="secondary-page">
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html" class="logo">
+                    <img src="assets/gustavs-logo.png" alt="Gustav's Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="navbar">
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="menu.html" class="nav-link">MENU</a></li>
+                    <li><a href="drinks.html" class="nav-link">DRINKS</a></li>
+                    <li><a href="index.html#experience" class="nav-link">GROUPS & PARTIES</a></li>
+                    <li><a href="jobs.html" class="nav-link active">JOBS</a></li>
+                    <li><a href="giftcards.html" class="nav-link">GIFT CARDS</a></li>
+                </ul>
+
+                <div class="nav-social">
+                    <a href="https://www.facebook.com/gustavsleavenworthwa" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/leavenworthgustavs" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://g.page/gustavsleavenworth" target="_blank" aria-label="Google">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Careers Page -->
+    <div class="careers-page">
+        <div class="careers-container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-chevron-left"></i> Back
+            </a>
+
+            <h1 class="careers-title">Careers</h1>
+
+            <p class="careers-intro">
+                We are hiring! Apply below to become a part of our awesome team and we'll get back to you ASAP!
+            </p>
+
+            <p class="careers-phone">
+                Alternatively if you have questions you can call us at <a href="tel:+15095484509">(509) 548-4509</a>
+            </p>
+
+            <form class="careers-form" id="careers-form">
+                <div class="form-group">
+                    <label for="name">Name (required):</label>
+                    <input type="text" id="name" name="name" required placeholder="e.g. Nina Simone">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone (required):</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="e.g. (123) 456-7890">
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="marketing-consent" name="marketing-consent">
+                    <label for="marketing-consent">
+                        I agree to receive marketing text messages from Gustav's about specials, events, and other
+                        exclusive offers.
+                        <br><br>
+                        My consent to receive these messages is not required to make a reservation or use the services
+                        provided.
+                    </label>
+                </div>
+
+                <div class="privacy-links" style="text-align: left; margin-bottom: 20px;">
+                    <a href="#">Privacy Policy</a> <a href="#">Terms and Conditions</a>
+                    <ul style="margin-top: 10px; margin-left: 20px; color: #333;">
+                        <li>Message and data rates may apply.</li>
+                        <li>Message frequency varies.</li>
+                        <li>Reply STOP to cancel, HELP for help.</li>
+                    </ul>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email (required):</label>
+                    <input type="email" id="email" name="email" required placeholder="e.g. cris@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Experience (required):</label>
+                    <input type="text" id="experience" name="experience" required placeholder="e.g. 3 years serving">
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Applying For:</strong></label>
+                    <div class="position-checkboxes" style="margin-top: 10px;">
+                        <div class="checkbox-item"
+                            style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <input type="checkbox" id="barback" name="position" value="Barback">
+                            <label for="barback" style="margin: 0;">Barback</label>
+                        </div>
+                        <div class="checkbox-item"
+                            style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <input type="checkbox" id="server" name="position" value="Server">
+                            <label for="server" style="margin: 0;">Server</label>
+                        </div>
+                        <div class="checkbox-item"
+                            style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <input type="checkbox" id="cook" name="position" value="Short Order Cook">
+                            <label for="cook" style="margin: 0;">Short Order Cook</label>
+                        </div>
+                        <div class="checkbox-item"
+                            style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <input type="checkbox" id="dishwasher" name="position" value="Dishwasher">
+                            <label for="dishwasher" style="margin: 0;">Dishwasher</label>
+                        </div>
+                        <div class="checkbox-item"
+                            style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <input type="checkbox" id="host" name="position" value="Host/Hostess">
+                            <label for="host" style="margin: 0;">Host/Hostess</label>
+                        </div>
+                        <div class="checkbox-item"
+                            style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <input type="checkbox" id="busser" name="position" value="Busser">
+                            <label for="busser" style="margin: 0;">Busser</label>
+                        </div>
+                        <div class="checkbox-item"
+                            style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <input type="checkbox" id="kitchen-prep" name="position" value="Kitchen Prep">
+                            <label for="kitchen-prep" style="margin: 0;">Kitchen Prep</label>
+                        </div>
+                        <div class="checkbox-item"
+                            style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <input type="checkbox" id="bartender" name="position" value="Bartender">
+                            <label for="bartender" style="margin: 0;">Bartender</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cover-letter">Cover Letter (optional):</label>
+                    <textarea id="cover-letter" name="cover-letter" rows="5"
+                        placeholder="Write a short comment about your skills and experience..."
+                        style="width: 100%; padding: 15px 20px; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px; background: #fff; color: #333; box-sizing: border-box; resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Careers form handling
+        document.getElementById('careers-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your application! We will review it and get back to you ASAP.\n\nFor immediate questions, please call us at (509) 548-4509');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
