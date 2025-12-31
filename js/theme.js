@@ -6,16 +6,12 @@
     const DARK = 'dark';
     const LIGHT = 'light';
 
-    // Get saved theme or detect system preference
+    // Get saved theme or default to dark
     function getInitialTheme() {
         const saved = localStorage.getItem(THEME_KEY);
         if (saved) return saved;
 
-        // Check system preference
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-            return LIGHT;
-        }
-        return DARK; // Default to dark (matches current site design)
+        return DARK; // Default to dark (requested by user)
     }
 
     // Apply theme to document

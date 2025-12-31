@@ -473,7 +473,8 @@ h4 {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    /* Changed from center */
     padding: 0.75rem 0 1rem;
     gap: 2rem;
     flex-wrap: wrap;
@@ -601,10 +602,23 @@ h4 {
 @media (max-width: 992px) {
     .mobile-menu-toggle {
         display: flex;
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
+        position: relative;
+        /* Changed from absolute */
+        z-index: 1001;
+    }
+
+    /* Scrolled state for toggle on mobile */
+    #header.scrolled .mobile-menu-toggle span {
+        background: #333;
+    }
+
+    #header:not(.scrolled) .mobile-menu-toggle span {
+        background: #ffffff;
+    }
+
+    /* Exception for dark logos/home section hero */
+    .home-page #header:not(.scrolled) .mobile-menu-toggle span {
+        background: #ffffff;
     }
 
     .header-top {
@@ -2104,8 +2118,9 @@ section {
 
 @media (max-width: 576px) {
     .chatbot {
-        bottom: 1rem;
-        right: 1rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        z-index: 2000;
     }
 
     .chatbot-window {
