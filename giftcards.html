@@ -41,32 +41,32 @@
         .giftcard-title {
             font-size: 2.5rem;
             font-family: 'Playfair Display', serif;
-            color: #333;
+            color: #fff;
             margin-bottom: 20px;
             font-weight: 600;
         }
 
         .giftcard-intro {
             font-size: 1.1rem;
-            color: #333;
+            color: #fff;
             margin-bottom: 10px;
             line-height: 1.6;
         }
 
         .giftcard-phone {
             font-size: 1rem;
-            color: #333;
+            color: #fff;
             margin-bottom: 40px;
         }
 
         .giftcard-phone a {
-            color: #333;
+            color: #fff;
             text-decoration: underline;
             font-weight: 500;
         }
 
         .giftcard-phone a:hover {
-            color: #000;
+            color: #c9a227;
         }
 
         .giftcard-form {
@@ -81,7 +81,7 @@
         .form-group label {
             display: block;
             font-size: 1rem;
-            color: #333;
+            color: #fff;
             margin-bottom: 10px;
             font-weight: 500;
         }
@@ -122,8 +122,8 @@
         .submit-btn {
             width: 100%;
             padding: 15px 30px;
-            background: #333;
-            color: #fff;
+            background: #c9a227;
+            color: #000;
             border: none;
             border-radius: 4px;
             font-size: 1.1rem;
@@ -134,14 +134,14 @@
         }
 
         .submit-btn:hover {
-            background: #000;
+            background: #b8941f;
         }
 
         .back-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #333;
+            color: #fff;
             text-decoration: none;
             font-size: 1rem;
             margin-bottom: 30px;
@@ -149,7 +149,7 @@
         }
 
         .back-link:hover {
-            color: #000;
+            color: #c9a227;
         }
     </style>
 </head>
@@ -163,6 +163,7 @@
                     <img src="assets/gustavs-logo.png" alt="Gustav's Logo" class="logo-img">
                 </a>
             </div>
+
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -188,6 +189,15 @@
                     <a href="https://g.page/gustavsleavenworth" target="_blank" aria-label="Google">
                         <i class="fab fa-google"></i>
                     </a>
+                </div>
+
+                <div class="site-controls">
+                    <button class="volume-toggle" id="volume-toggle" title="Toggle audio" aria-label="Toggle audio">
+                        <i class="fas fa-volume-mute" id="volume-icon"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun" id="theme-toggle-icon"></i>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -260,6 +270,10 @@
     </div>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/chatbot-data.js"></script>
+    <script src="js/chatbot.js"></script>
     <script src="js/main.js"></script>
     <script>
         // Gift card form handling

@@ -36,6 +36,7 @@
                     <img src="assets/gustavs-logo.png" alt="Gustav's Logo" class="logo-img">
                 </a>
             </div>
+
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -62,6 +63,15 @@
                     <a href="https://g.page/gustavsleavenworth" target="_blank" aria-label="Google">
                         <i class="fab fa-google"></i>
                     </a>
+                </div>
+
+                <div class="site-controls">
+                    <button class="volume-toggle" id="volume-toggle" title="Toggle audio" aria-label="Toggle audio">
+                        <i class="fas fa-volume-mute" id="volume-icon"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun" id="theme-toggle-icon"></i>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -789,6 +799,7 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/theme.js"></script>
     <script src="js/chatbot-data.js"></script>
     <script src="js/chatbot.js"></script>
     <script src="js/main.js"></script>

@@ -424,6 +424,19 @@ h4 {
     box-shadow: var(--shadow-md);
 }
 
+/* Default Dark Text for Cream Header */
+#header .nav-link,
+#header .nav-social a,
+#header .theme-toggle,
+#header .volume-toggle {
+    color: var(--primary-black);
+    border-color: var(--primary-black);
+}
+
+#header .mobile-menu-toggle span {
+    background: var(--primary-black);
+}
+
 .home-page #header:not(.scrolled) .nav-link,
 .home-page #header:not(.scrolled) .nav-social a,
 .home-page #header:not(.scrolled) .theme-toggle,
@@ -445,6 +458,7 @@ h4 {
 
 #header.scrolled .logo-img {
     height: 35px;
+    filter: brightness(0);
 }
 
 #header.scrolled .navbar {
@@ -462,14 +476,17 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .logo-img {
     height: 55px;
-    /* Slightly smaller than original 60px */
     width: auto;
     transition: var(--transition-base);
+    filter: brightness(0);
 }
+
+
 
 .navbar {
     display: flex;
@@ -544,23 +561,22 @@ h4 {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    margin-left: 1rem;
+    margin-left: 0;
 }
 
 .theme-toggle,
 .volume-toggle {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: transparent;
-    border: 1px solid #333;
-    color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1.5px solid var(--primary-black);
+    color: var(--primary-black);
+    font-size: 0.9rem;
     cursor: pointer;
-    transition: var(--transition-base);
+    transition: all var(--transition-base);
 }
 
 .theme-toggle:hover,
@@ -601,17 +617,39 @@ h4 {
 }
 
 @media (max-width: 992px) {
-    .navbar {
+    #header .container {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        padding: 0.25rem 0;
+        padding: 0.5rem 1rem;
+        min-height: 60px;
+    }
+
+    .site-controls {
+        display: flex;
+        gap: 0.5rem;
+        order: 1;
+    }
+
+    .header-top {
+        position: static;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+        flex: 1;
     }
 
     .mobile-menu-toggle {
         display: flex;
-        position: absolute;
-        right: 1.5rem;
-        top: 20px;
-        z-index: 1100;
+        position: static;
+        order: 3;
+        padding: 8px;
+    }
+
+    .logo-img {
+        height: 40px;
     }
 
     /* Scrolled state for toggle on mobile */
@@ -620,7 +658,7 @@ h4 {
     }
 
     #header:not(.scrolled) .mobile-menu-toggle span {
-        background: #ffffff;
+        background: var(--primary-black);
     }
 
     /* Exception for dark logos/home section hero */
@@ -628,31 +666,35 @@ h4 {
         background: #ffffff;
     }
 
-    .header-top {
-        position: relative;
+    #header:not(.scrolled) .site-controls .theme-toggle,
+    #header:not(.scrolled) .site-controls .volume-toggle {
+        color: var(--primary-black);
+        border-color: var(--primary-black);
+    }
+
+    .navbar {
+        display: block;
+        width: 100%;
+        order: 4;
     }
 
     .nav-menu {
         position: fixed;
-        top: 80px;
+        top: 60px;
         left: 0;
         right: 0;
         background: #f5f0e1;
         flex-direction: column;
         padding: 2rem;
         gap: 1.5rem;
-        transform: translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: var(--transition-base);
+        display: none;
+        transition: none;
         box-shadow: var(--shadow-md);
         z-index: 1050;
     }
 
     .nav-menu.active {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
+        display: flex !important;
     }
 
     .nav-social {
@@ -2365,41 +2407,104 @@ section {
 }
 
 /* ===================================
-   Secondary Pages Styling
-   (Forces light theme look for forms/menu)
+   Form Elements (Dark Theme Default)
    =================================== */
-
-body.secondary-page {
-    background-color: #faf8f3 !important;
-    color: #333 !important;
+input,
+select,
+textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    font-family: var(--font-secondary);
+    border-radius: var(--border-radius-sm);
+    padding: 0.75rem 1rem;
+    width: 100%;
 }
 
-.secondary-page #header {
-    background: #f5f0e1 !important;
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
 }
 
-.secondary-page section,
-.secondary-page .menu-section,
-.secondary-page .careers-page,
-.secondary-page .giftcard-page {
-    background-color: #faf8f3 !important;
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
 }
 
-.secondary-page .section-title,
-.secondary-page .section-subtitle,
-.secondary-page .section-header h2,
-.secondary-page .careers-title,
-.secondary-page .careers-intro,
-.secondary-page .careers-phone,
-.secondary-page .form-group label,
-.secondary-page .giftcard-title,
-.secondary-page .giftcard-intro,
-.secondary-page .giftcard-phone {
-    color: #333 !important;
+.checkbox-item label {
+    margin: 0;
+    color: #ffffff;
+    /* Explicitly white for dark theme */
+    cursor: pointer;
 }
 
-.secondary-page .nav-link,
-.secondary-page .nav-social a,
-.secondary-page .theme-toggle {
-    color: #333 !important;
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    /* Explicitly white for dark theme */
+    font-weight: 500;
 }
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-gold);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Secondary Page Text Overrides (Dark Theme) */
+.careers-title,
+.giftcard-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.careers-intro,
+.giftcard-intro,
+.careers-phone,
+.giftcard-phone {
+    color: var(--text-muted);
+    /* Light gray for readability */
+    margin-bottom: 1.5rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    color: var(--primary-gold);
+}
+
+/* Light Theme Overrides for Forms */
+[data-theme="light"] input,
+[data-theme="light"] select,
+[data-theme="light"] textarea {
+    background-color: var(--bg-card);
+    border-color: rgba(0, 0, 0, 0.15);
+    color: var(--primary-black);
+}
+
+[data-theme="light"] .checkbox-item label,
+[data-theme="light"] .form-group label,
+[data-theme="light"] .careers-title,
+[data-theme="light"] .giftcard-title,
+[data-theme="light"] .careers-intro,
+[data-theme="light"] .giftcard-intro,
+[data-theme="light"] .careers-phone,
+[data-theme="light"] .giftcard-phone,
+[data-theme="light"] .back-link {
+    color: var(--primary-black);
+}
+
+/* Secondary Pages Styling Removed to enable Dark Theme */
